@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameList privacy policy</title>
+<style>
+  :root { --bg: #f6f5fc; --fg: #1a1b2e; --muted: #47455a; --accent: #5b45c9; --rule: #c8c5da; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0e1022; --fg: #e4e3f2; --muted: #c6c4da; --accent: #b7a6ff; --rule: #45435c; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.7rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  p.meta, nav { color: var(--muted); }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
+  ul { padding-left: 1.3rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#en">English</a> · <a href="#pl">Polski</a></nav>
+
+<section id="en" lang="en">
+<h1>GameList privacy policy</h1>
+<p class="meta">Effective 28 September 2026. GameList is an Android app by Marowe (developer). GameList is not affiliated with Valve (Steam), CD PROJEKT (GOG), Epic Games, Electronic Arts, Amazon, Ubisoft or Microsoft (Xbox).</p>
+
+<h2>In short</h2>
+<p>GameList keeps a list of the games you own on your phone. It has no account, no server of its own, no ads, no analytics and no tracking. The developer receives no data from the app.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+  <li>Your game list: titles, the storefront each title comes from, the storefront's item id, and when each storefront was last synced (one file in the app's private storage).</li>
+  <li>Game images (Steam capsules) the app downloaded, in the app's private storage.</li>
+  <li>The theme and language you chose in Settings.</li>
+</ul>
+<p>Android's backup of app data is off for GameList. Uninstalling the app deletes all of it. A backup file exists only if you export one yourself, to a place you choose.</p>
+
+<h2>Storefront sign-ins</h2>
+<p>GameList never asks for, sees or stores a storefront password or cookie. To import a library, you sign in on the storefront's own page in your browser or the storefront's app, and you hand GameList a short-lived token or one-time code, by Share or by paste. GameList uses it in memory for one import and then forgets it. It is never written to storage.</p>
+<ul>
+  <li><b>Steam:</b> the token is sent to Steam's Web API (api.steampowered.com) to read your owned games.</li>
+  <li><b>GOG:</b> the one-time code is exchanged with auth.gog.com; the games are read from embed.gog.com.</li>
+  <li><b>Epic Games:</b> the one-time code is exchanged with Epic's account service; the library and titles are read from Epic's services; the token is then signed out.</li>
+  <li><b>EA:</b> the token is sent to EA's GraphQL service (service-aggregation-layer.juno.ea.com). EA offers no way to sign it out, so it expires on its own within 4 hours.</li>
+  <li><b>Amazon Games:</b> GameList registers as an "Amazon Games" device on your Amazon account (api.amazon.com), reads your games (gaming.amazon.com) and removes the device at the end of every sync, whether the sync succeeds or not. It asks for your consent before this.</li>
+  <li><b>Ubisoft and Xbox:</b> you paste a list of titles; nothing is sent anywhere.</li>
+</ul>
+<p>These requests go straight from your phone to the storefront. The storefronts' own privacy policies apply to them.</p>
+
+<h2>Game images from Steam</h2>
+<p>To show an image next to a title, GameList may look the title up in Steam's public search (steamcommunity.com) and download the image from Steam's content network (shared.akamai.steamstatic.com). This sends the game's title (or its Steam id) and, like any web request, your phone's IP address to Valve. No account data or token is sent. You can start this from Settings ("Fetch icons"), and it also runs after a sync.</p>
+
+<h2>Opening a store page</h2>
+<p>Tapping a title opens that game's page or a search on the storefront, in its app or your browser. That storefront then sees the visit, as with any link you open.</p>
+
+<h2>Sharing and selling</h2>
+<p>The developer does not collect, sell or share your data. The data described above goes only from your phone to the service it concerns, at your request.</p>
+
+<h2>Children</h2>
+<p>GameList is not directed at children under 13.</p>
+
+<h2>Changes and contact</h2>
+<p>Changes to this policy will be published on this page with a new date. Questions or requests: <a href="https://github.com/Marowe/gamelist-privacy/issues">open an issue on GitHub</a>.</p>
+</section>
+
+<hr>
+
+<section id="pl" lang="pl">
+<h1>Polityka prywatności GameList</h1>
+<p class="meta">Obowiązuje od 28 września 2026. GameList to aplikacja na Androida autorstwa Marowe (deweloper). GameList nie jest powiązana z Valve (Steam), CD PROJEKT (GOG), Epic Games, Electronic Arts, Amazonem, Ubisoftem ani Microsoftem (Xbox).</p>
+
+<h2>W skrócie</h2>
+<p>GameList przechowuje na Twoim telefonie listę posiadanych gier. Nie ma konta, własnego serwera, reklam, analityki ani śledzenia. Deweloper nie otrzymuje z aplikacji żadnych danych.</p>
+
+<h2>Co zostaje na telefonie</h2>
+<ul>
+  <li>Twoja lista gier: tytuły, sklep, z którego pochodzi każdy tytuł, identyfikator pozycji w sklepie i czas ostatniej synchronizacji każdego sklepu (jeden plik w prywatnej pamięci aplikacji).</li>
+  <li>Obrazki gier (okładki ze Steama) pobrane przez aplikację, w jej prywatnej pamięci.</li>
+  <li>Motyw i język wybrane w Ustawieniach.</li>
+</ul>
+<p>Kopia zapasowa danych aplikacji Androida jest dla GameList wyłączona. Odinstalowanie aplikacji usuwa wszystkie te dane. Plik kopii powstaje tylko wtedy, gdy sam go wyeksportujesz, w wybranym przez siebie miejscu.</p>
+
+<h2>Logowanie do sklepów</h2>
+<p>GameList nigdy nie prosi o hasło ani ciasteczko sklepu, nie widzi ich i nie przechowuje. Aby zaimportować bibliotekę, logujesz się na stronie sklepu w przeglądarce albo w aplikacji sklepu i przekazujesz GameList krótkotrwały token lub jednorazowy kod, przez Udostępnij albo wklejenie. GameList używa go w pamięci do jednego importu i zapomina. Nigdy nie zapisuje go w pamięci trwałej.</p>
+<ul>
+  <li><b>Steam:</b> token trafia do Steam Web API (api.steampowered.com), które zwraca listę posiadanych gier.</li>
+  <li><b>GOG:</b> jednorazowy kod jest wymieniany w auth.gog.com, gry są odczytywane z embed.gog.com.</li>
+  <li><b>Epic Games:</b> jednorazowy kod jest wymieniany w usłudze kont Epic, biblioteka i tytuły są odczytywane z usług Epic, a potem token jest wylogowywany.</li>
+  <li><b>EA:</b> token trafia do usługi GraphQL EA (service-aggregation-layer.juno.ea.com). EA nie pozwala go wylogować, więc wygasa sam w ciągu 4 godzin.</li>
+  <li><b>Amazon Games:</b> GameList rejestruje się na Twoim koncie Amazon jako urządzenie „Amazon Games” (api.amazon.com), odczytuje Twoje gry (gaming.amazon.com) i usuwa to urządzenie na końcu każdej synchronizacji, udanej czy nie. Wcześniej prosi o zgodę.</li>
+  <li><b>Ubisoft i Xbox:</b> wklejasz listę tytułów, nic nie jest nigdzie wysyłane.</li>
+</ul>
+<p>Te zapytania idą bezpośrednio z Twojego telefonu do sklepu. Dotyczą ich polityki prywatności sklepów.</p>
+
+<h2>Obrazki gier ze Steama</h2>
+<p>Aby pokazać obrazek przy tytule, GameList może wyszukać tytuł w publicznej wyszukiwarce Steama (steamcommunity.com) i pobrać obrazek z sieci dostarczania treści Steama (shared.akamai.steamstatic.com). Do Valve trafia wtedy tytuł gry (albo jej identyfikator Steam) i, jak przy każdym zapytaniu w sieci, adres IP telefonu. Nie są wysyłane żadne dane konta ani tokeny. Możesz to uruchomić w Ustawieniach („Pobierz ikony”), dzieje się to też po synchronizacji.</p>
+
+<h2>Otwieranie strony sklepu</h2>
+<p>Stuknięcie tytułu otwiera stronę gry albo wyszukiwarkę sklepu, w jego aplikacji lub w przeglądarce. Sklep widzi wtedy tę wizytę, jak przy każdym otwieranym linku.</p>
+
+<h2>Udostępnianie i sprzedaż</h2>
+<p>Deweloper nie zbiera, nie sprzedaje ani nie udostępnia Twoich danych. Opisane wyżej dane trafiają wyłącznie z Twojego telefonu do usługi, której dotyczą, na Twoje polecenie.</p>
+
+<h2>Dzieci</h2>
+<p>GameList nie jest przeznaczona dla dzieci poniżej 13 lat.</p>
+
+<h2>Zmiany i kontakt</h2>
+<p>Zmiany tej polityki zostaną opublikowane na tej stronie z nową datą. Pytania i wnioski: <a href="https://github.com/Marowe/gamelist-privacy/issues">zgłoś sprawę na GitHubie</a>.</p>
+</section>
+</main>
+</body>
+</html>
